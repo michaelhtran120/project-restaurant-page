@@ -1,0 +1,147 @@
+:root {
+  --dark-gold: #c19b46;
+  --light-gold: #e3cd71;
+  --beige: rgb(241, 241, 226);
+}
+
+html {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  background-color: var(--beige);
+  min-height: 100vh;
+}
+
+#content {
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#nav-logo {
+  width: 175px;
+  margin-left: 100px;
+}
+
+#nav-links {
+  display: inline-block;
+  margin-right: 100px;
+}
+#nav-links button {
+  padding: 12px 24px;
+  margin-left: 35px;
+  border: none;
+  background-color: var(--beige);
+  font-weight: 500;
+  font-size: 18px;
+  color: black;
+}
+.active {
+  text-decoration: underline var(--dark-gold);
+  text-decoration-thickness: 0.2em;
+}
+
+#nav-links button:hover {
+  color: var(--dark-gold);
+}
+
+#hero-bg {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  width: 100vw;
+  filter: blur(1px) opacity(50%);
+  z-index: -1;
+}
+
+#hero-logo-bg {
+  background-color: var(--beige);
+  width: 50%;
+  height: 45%;
+  position: absolute;
+  top: 52%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 5px 6px 2px 1px var(--light-gold);
+}
+
+#hero-logo {
+  position: absolute;
+  width: 40%;
+  top: 48%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#title-1 {
+  position: absolute;
+  font-size: 150%;
+  font-weight: 700;
+  top: 68%;
+  left: 49%;
+  transform: translate(-50%, -50%);
+  background: -webkit-linear-gradient(var(--dark-gold), var(--light-gold));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#about {
+  width: 52%;
+  margin-top: 4em;
+  margin-bottom: 4em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#about h1 {
+  font-size: 24px;
+  margin-bottom: 2em;
+}
+
+#about p {
+  font-size: 18px;
+  line-height: 1.4em;
+  text-align: left;
+  text-indent: 2em;
+}
+
+#footer-info {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  width: 100vw;
+  height: 3em;
+  bottom: 0;
+  left: 0;
+  margin-top: 3em;
+  background-color: var(--light-gold);
+  font-size: 12px;
+}
+
+#menu {
+  display: grid;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  grid-template-columns: repeat(3, 1fr);
+  grid-row-gap: 4em;
+}
+#menu-title {
+  font-size: 24px;
+  margin-bottom: 2em;
+}
+#menu h2 {
+  font-size: 18px;
+}
+#menu img {
+  width: 150px;
+  height: 150px;
+}
