@@ -39,11 +39,11 @@ html {
   background-color: var(--beige);
   font-weight: 500;
   font-size: 18px;
-  color: black;
 }
 .active {
   text-decoration: underline var(--dark-gold);
   text-decoration-thickness: 0.2em;
+  color: var(--dark-gold);
 }
 
 #nav-links button:hover {
@@ -111,20 +111,6 @@ html {
   text-indent: 2em;
 }
 
-#footer-info {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  position: relative;
-  width: 100vw;
-  height: 3em;
-  bottom: 0;
-  left: 0;
-  margin-top: 3em;
-  background-color: var(--light-gold);
-  font-size: 12px;
-}
-
 #menu {
   display: grid;
   width: 70%;
@@ -144,4 +130,33 @@ html {
 #menu img {
   width: 150px;
   height: 150px;
+}
+#locations-container {
+  display: flex;
+}
+
+#locations-container h2 {
+  font-size: 18px;
+}
+
+#locations-container iframe {
+  margin-top: 2em;
+}
+
+#email-div {
+  margin-top: 2em;
+}
+
+#footer-info {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  width: 100vw;
+  height: 3em;
+  bottom: 0;
+  left: 0;
+  margin-top: 3em;
+  background-color: var(--light-gold);
+  font-size: 12px;
 }
